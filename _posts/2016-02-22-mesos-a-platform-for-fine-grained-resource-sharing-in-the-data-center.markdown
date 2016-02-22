@@ -44,8 +44,10 @@ Discussion
 
 References
 --------------
-[1] http://hadoop.apache.org/
+[1] [Mesos](http://mesos.apache.org/)
 
-[2] http://research.microsoft.com/en-us/projects/dryad/
+[2] [Hadoop](http://hadoop.apache.org/)
 
-[3] http://research.google.com/pubs/pub41684.html
+[3] [Dryad](http://research.microsoft.com/en-us/projects/dryad/)
+
+[4] [Omega](http://research.google.com/pubs/pub41684.html)
