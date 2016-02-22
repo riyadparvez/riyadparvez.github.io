@@ -58,7 +58,7 @@ Master
 
 Worker
 ---------
-* Maintains the current state of assigned partition(s) of the graph, responsible for computation of the assigned vertices,  and delivers messages.
+* Maintains the current state of assigned partition(s) of the graph, responsible for computation of the assigned vertices, and delivers messages.
 
 Message Combiner
 ------------
@@ -66,7 +66,7 @@ Message Combiner
 * System calls "Combine()" for several messages intended for a vertex _V_ into a single message containing the combined message.
 * User defined, application specific.
 * Not enabled by default.
-* No guarantee which messages will be combined, or in what order . Therefore, combiners should be enabled for commutative and associative operations.
+* No guarantee which messages will be combined, or in what order. Therefore, combiners should be enabled for commutative and associative operations.
 
 Aggregator
 --------------
@@ -85,9 +85,8 @@ Graph Mutation
 --------------------
 * Input graph can be mutated in run-time.
 * Mutations become effective in the superstep after the requests are issued.
-* Within superstep, removals are performed first. All mutations are before "computation()".
-* First edge removal, vertex removal. Additions are after removal, first vertex addition, edge addition.
-* Local mutations (mutating own edges) becomes immediately effective since no reason of conflicts.
+* Within superstep, removals are performed first. All mutations are before "Computation()". First edge removal, vertex removal. Additions are after removal, first vertex addition, edge addition.
+* Local mutations (mutating own edges) becomes immediately effective since there is no reason of conflicts.
 
 Experiment
 ---------------
